@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root-app
+  name: app04-root-app
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: git@github.com:tbthesam3/argocd-lab.git
+    repoURL: git@github.com:tbthesam3/argocd-lab-with-helm.git
     targetRevision: HEAD
     path: apps
   destination:

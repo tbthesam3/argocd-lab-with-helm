@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:tbthesam3/argocd-lab.git
+    repoURL: git@github.com:tbthesam3/argocd-lab-with-helm.git
     path: charts/app04-helm
     targetRevision: HEAD
     helm:
