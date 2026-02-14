@@ -1,0 +1,8 @@
+replicaCount: 1
+
+image:
+  tag: dev
+
+env:
+  ENVIRONMENT: dev
+  LOG_LEVEL: debug

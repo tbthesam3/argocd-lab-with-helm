@@ -1,0 +1,8 @@
+replicaCount: 3
+
+image:
+  tag: stable
+
+env:
+  ENVIRONMENT: prod
+  LOG_LEVEL: info

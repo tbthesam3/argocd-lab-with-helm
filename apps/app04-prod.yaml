@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app04-prod
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:tbthesam3/argocd-lab.git
+    path: charts/app04-helm
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - ../../environments/prod/app04-values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: prod
+  syncPolicy:
+    automated: false   # prod دستی
